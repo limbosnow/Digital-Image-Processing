@@ -12,7 +12,7 @@ def mean_filter(image,K_size=10):
     if len(image.shape)==3:
         H,W,C=image.shape
     else:
-        image=np.extend_dims(image,axis=-1)
+        image=np.expand_dims(image,axis=-1)
         H,W,C=image.shape
     #zero padding
     pad=K_size//2
