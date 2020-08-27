@@ -8,7 +8,7 @@ def mean_filter_without_overlapping(image,K_size=9):
     if len(image.shape)==3:
         H,W,C=image.shape
     else:
-        image=np.extend_dims(image,axis=-1)
+        image=np.expand_dims(image,axis=-1)
         H,W,C=image.shape
 
     #zero padding
